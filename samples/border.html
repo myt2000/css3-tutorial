@@ -29,19 +29,28 @@
             padding: 10px;
             background: #6AAFCF;
             -moz-box-shadow: 15px 15px 5px #888245; /* For Firefox/Mozilla */
-            -webkit-box-shadow: 15px 15px 5px #888245; /* For Google Chrome and Safari */
+            -webkit-box-shadow: 20px 20px 5px #5a4444; /* For Google Chrome and Safari */
             -o-box-shadow: 15px 15px 5px #888245; /* For Opera */
-            box-shadow: 15px 15px 5px #888245;
+            box-shadow: 5px 5px 5px #85b8c7;
         }
 
         .border-image {
-            border-width: 15px;
+            /* border-width: 30px;  chrome浏览器无意义 */
+            border: 30px solid transparent;
             -moz-border-image: url(/images/border.png) 30 30 round; /* Firefox */
-            -webkit-border-image: url(/images/border.png) 30 30 round; /* Safari and Chrome */
+            -webkit-border-image: url(./images/border.png) 30 30 round; /* Safari and Chrome */
             -o-border-image: url(/images/border.png) 30 30 round; /* Opera */
-            border-image: url(/images/border.png) 30 30 round;
+            border-image: url(./images/border.png) 30 25 repeat;
         }
 
+
+        .border-angle {
+            margin-top: 20px;
+            width: 300px;
+            border-radius: 20px 0 / 50px;
+            border: 20px solid #FF0000;
+            font-weight: bold;
+        }
     </style>
 
 <body>
@@ -56,6 +65,10 @@
 
 <div class="border-image">
     You can see the customized border. This could be either *.png or *.jpg format.
+</div>
+
+<div class="border-angle">
+    四个圆角
 </div>
 
 </body>
