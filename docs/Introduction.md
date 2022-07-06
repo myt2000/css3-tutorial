@@ -63,6 +63,13 @@ selector {property: value;}
 </style>
 ```
 
+```scss
+<style lang="scss" scoped>
+@import "../style/viriables.scss";
+</style>
+
+```
+
 **注意**：在实际开发中，推荐使用 HTML 的 link 对象来引入。详细内容可以参见<http://www.waylau.com/css-code-guide/#css-miscellaneous>
 
 > 注意规则：
